@@ -1,17 +1,17 @@
-package main
+package abstractfactory
 
 type Gestor struct {
 	User
 }
 
 func (c *Gestor) getName() string {
-	return c.nome
+	return c.Nome
 }
 
 func (c *Gestor) getSobrenome() string {
-	return c.sobrenome
+	return c.Sobrenome
 }
 
 func (c *Gestor) getPassword() string {
-	return c.password
+	return c.Password
 }

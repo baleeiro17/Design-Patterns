@@ -1,7 +1,7 @@
-package main
+package abstractfactory
 
 type IUserFactory interface {
-	makeUser(user User) IUser
+	MakeUser(user User) IUser
 }
 
 func GetUserFactory(typeUser int) (IUserFactory, error) {

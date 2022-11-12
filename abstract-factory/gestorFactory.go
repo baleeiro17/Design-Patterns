@@ -1,14 +1,14 @@
-package main
+package abstractfactory
 
 type GestorFactory struct{}
 
-func (g *GestorFactory) makeUser(user User) IUser {
+func (g *GestorFactory) MakeUser(user User) IUser {
 
 	return &Gestor{
 		User: User{
-			user.nome,
-			user.sobrenome,
-			user.password,
+			user.Nome,
+			user.Sobrenome,
+			user.Password,
 		},
 	}
 }

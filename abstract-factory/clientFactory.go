@@ -1,14 +1,14 @@
-package main
+package abstractfactory
 
 type ClientFactory struct{}
 
-func (c *ClientFactory) makeUser(user User) IUser {
+func (c *ClientFactory) MakeUser(user User) IUser {
 
 	return &Client{
 		User: User{
-			user.nome,
-			user.sobrenome,
-			user.password,
+			user.Nome,
+			user.Sobrenome,
+			user.Password,
 		},
 	}
 }

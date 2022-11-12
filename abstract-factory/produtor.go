@@ -1,4 +1,4 @@
-package main
+package abstractfactory
 
 type Produtor struct {
 	User
@@ -6,15 +6,15 @@ type Produtor struct {
 }
 
 func (c *Produtor) getName() string {
-	return c.nome
+	return c.Nome
 }
 
 func (c *Produtor) getSobrenome() string {
-	return c.sobrenome
+	return c.Sobrenome
 }
 
 func (c *Produtor) getPassword() string {
-	return c.password
+	return c.Password
 }
 
 func (c *Produtor) GetSaldoVendas() float64 {

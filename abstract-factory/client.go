@@ -1,4 +1,4 @@
-package main
+package abstractfactory
 
 type Client struct {
 	User
@@ -6,15 +6,15 @@ type Client struct {
 }
 
 func (c *Client) getName() string {
-	return c.nome
+	return c.Nome
 }
 
 func (c *Client) getSobrenome() string {
-	return c.sobrenome
+	return c.Sobrenome
 }
 
 func (c *Client) getPassword() string {
-	return c.password
+	return c.Password
 }
 
 func (c *Client) getSaldo() float64 {

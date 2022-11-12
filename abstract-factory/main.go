@@ -1,4 +1,4 @@
-package main
+package abstractfactory
 
 import "fmt"
 
@@ -12,10 +12,10 @@ func main() {
 
 	gestorFactory, _ := GetUserFactory(GestorType)
 
-	gestor := gestorFactory.makeUser(User{
-		nome:      "John",
-		sobrenome: "Smith",
-		password:  "123",
+	gestor := gestorFactory.MakeUser(User{
+		Nome:      "John",
+		Sobrenome: "Smith",
+		Password:  "123",
 	})
 
 	fmt.Println(gestor)

@@ -1,14 +1,14 @@
-package main
+package abstractfactory
 
 type ProdutorFactory struct{}
 
-func (p *ProdutorFactory) makeUser(user User) IUser {
+func (p *ProdutorFactory) MakeUser(user User) IUser {
 
 	return &Produtor{
 		User: User{
-			user.nome,
-			user.sobrenome,
-			user.password,
+			user.Nome,
+			user.Sobrenome,
+			user.Password,
 		},
 	}
 }

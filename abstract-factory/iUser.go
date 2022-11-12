@@ -1,4 +1,4 @@
-package main
+package abstractfactory
 
 type IUser interface {
 	getName() string
@@ -7,7 +7,7 @@ type IUser interface {
 }
 
 type User struct {
-	nome      string
-	sobrenome string
-	password  string
+	Nome      string
+	Sobrenome string
+	Password  string
 }
