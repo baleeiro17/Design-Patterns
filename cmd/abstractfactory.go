@@ -12,6 +12,7 @@ const (
 )
 
 func main() {
+
 	gestorFactory, _ := abstractfactory.GetUserFactory(GestorType)
 
 	gestor := gestorFactory.MakeUser(abstractfactory.User{
